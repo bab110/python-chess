@@ -1,0 +1,1 @@
+This folder contains input-based-partitioning testing and graph-based testing. 
