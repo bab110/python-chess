@@ -2,7 +2,7 @@ import chess
 from behave import given, when, then
 
 
-@given('the_user_has_created_a_board')
+@given('the user has created a board')
 def the_user_has_created_a_board(context):
     context.board = chess.Board()
 
