@@ -1,0 +1,89 @@
+<testsuite name="uci_parser_check.As a developer, I want the engine to support the Universal Chess Interface (UCI) protocol for chess move validation" tests="8" errors="0" failures="0" skipped="0" time="0.008053" timestamp="2026-08-07T19:42:40.807491" hostname="TVPC"><testcase classname="uci_parser_check.As a developer, I want the engine to support the Universal Chess Interface (UCI) protocol for chess move validation" name="The parser is provided the valid uci string: b5c7" status="passed" time="0.001096"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: The parser is provided the valid uci string: b5c7
+    Given the engine is waiting for a uci move string ... passed in 0.000s
+    When the given uci move is "b5c7" ... passed in 0.001s
+    Then the validated uci string should be "b5c7" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="uci_parser_check.As a developer, I want the engine to support the Universal Chess Interface (UCI) protocol for chess move validation" name="The parser is provided the valid uci string: e7e8q" status="passed" time="0.001029"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: The parser is provided the valid uci string: e7e8q
+    Given the engine is waiting for a uci move string ... passed in 0.000s
+    When the given uci move is "e7e8q" ... passed in 0.001s
+    Then the validated uci string should be "e7e8q" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="uci_parser_check.As a developer, I want the engine to support the Universal Chess Interface (UCI) protocol for chess move validation" name="The parser is provided the valid uci string: P@e4" status="passed" time="0.001034"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: The parser is provided the valid uci string: P@e4
+    Given the engine is waiting for a uci move string ... passed in 0.000s
+    When the given uci move is "P@e4" ... passed in 0.000s
+    Then the validated uci string should be "P@e4" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="uci_parser_check.As a developer, I want the engine to support the Universal Chess Interface (UCI) protocol for chess move validation" name="The parser is provided the valid uci string: B@f4" status="passed" time="0.000906"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: The parser is provided the valid uci string: B@f4
+    Given the engine is waiting for a uci move string ... passed in 0.000s
+    When the given uci move is "B@f4" ... passed in 0.000s
+    Then the validated uci string should be "B@f4" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="uci_parser_check.As a developer, I want the engine to support the Universal Chess Interface (UCI) protocol for chess move validation" name="The parser is provided the valid uci string: 0000" status="passed" time="0.00087"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: The parser is provided the valid uci string: 0000
+    Given the engine is waiting for a uci move string ... passed in 0.000s
+    When the given uci move is "0000" ... passed in 0.000s
+    Then the validated uci string should be "0000" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="uci_parser_check.As a developer, I want the engine to support the Universal Chess Interface (UCI) protocol for chess move validation" name="The parser is fed the invalid uci string: &quot;N&quot;" status="passed" time="0.001117"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: The parser is fed the invalid uci string: "N"
+    Given the engine is waiting for a uci move string ... passed in 0.000s
+    When the given uci move is "N" ... passed in 0.001s
+    Then a "InvalidMoveError" error should be raised ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="uci_parser_check.As a developer, I want the engine to support the Universal Chess Interface (UCI) protocol for chess move validation" name="The parser is fed the invalid uci string: &quot;z1g3&quot;" status="passed" time="0.001069"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: The parser is fed the invalid uci string: "z1g3"
+    Given the engine is waiting for a uci move string ... passed in 0.000s
+    When the given uci move is "z1g3" ... passed in 0.000s
+    Then a "InvalidMoveError" error should be raised ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="uci_parser_check.As a developer, I want the engine to support the Universal Chess Interface (UCI) protocol for chess move validation" name="The parser is fed the invalid uci string: &quot;Q@g9&quot;" status="passed" time="0.000933"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: The parser is fed the invalid uci string: "Q@g9"
+    Given the engine is waiting for a uci move string ... passed in 0.000s
+    When the given uci move is "Q@g9" ... passed in 0.000s
+    Then a "InvalidMoveError" error should be raised ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

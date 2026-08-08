@@ -1,9 +1,10 @@
 import chess
 from behave import given, when, then
 
-@given('The board state is {board_FEN}')
+@given('the board state is "{board_FEN}"')
 def the_board_state_is_set(context, board_FEN):
-    context.board = chess.Board(board_FEN.strip())
+    context.board_FEN = board_FEN.strip()
+    context.board = chess.Board(context.board_FEN)
 
 @when('the uci move given is "{uci_string}"')
 def the_uci_string_is_checked(context, uci_string):
@@ -14,7 +15,7 @@ def the_uci_string_is_checked(context, uci_string):
         context.move = None
         context.is_valid_syntax = False
 
-@then('the move should be evaluated as {legality}')
+@then('the move should be evaluated as "{legality}"')
 def the_legality_is_evaluated(context, legality):
 
     # Checking a valid move that was given

@@ -1,0 +1,37 @@
+<testsuite name="game_is_over.Check Game Is Over" tests="3" errors="0" failures="0" skipped="0" time="0.004581" timestamp="2026-08-07T19:42:40.776199" hostname="TVPC"><testcase classname="game_is_over.Check Game Is Over" name="Checkmate" status="passed" time="0.001807"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Checkmate
+    Given the user has created a board ... passed in 0.001s
+    When the board state is "1rbqkbnr/pppp1Qpp/2n5/4p3/2B1P3/8/PPPP1PPP/RNB1K1NR b KQk - 0 4" ... passed in 0.000s
+    And the game state is checked ... passed in 0.000s
+    Then game over should return true ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="game_is_over.Check Game Is Over" name="Stalemate" status="passed" time="0.001479"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Stalemate
+    Given the user has created a board ... passed in 0.000s
+    When the board state is "7K/7P/7k/8/6q1/8/8/8 w - - 0 1" ... passed in 0.000s
+    And the game state is checked ... passed in 0.000s
+    Then game over should return true ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="game_is_over.Check Game Is Over" name="Game still in progress" status="passed" time="0.001295"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Game still in progress
+    Given the user has created a board ... passed in 0.000s
+    When the board state is "8/6P1/2p5/1Pqk4/6P1/2P1RKP1/4P1P1/8 w - - 0 1" ... passed in 0.000s
+    And the game state is checked ... passed in 0.000s
+    Then game over should return false ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

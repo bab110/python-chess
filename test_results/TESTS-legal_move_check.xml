@@ -1,0 +1,67 @@
+<testsuite name="legal_move_check.As a developer, I want the engine to verify that a move is legal" tests="6" errors="0" failures="0" skipped="0" time="0.007371" timestamp="2026-08-07T19:42:40.790934" hostname="TVPC"><testcase classname="legal_move_check.As a developer, I want the engine to verify that a move is legal" name="Verify that a given move is legal for the given board state -- @1.1 Scenario Table" status="passed" time="0.001473"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Verify that a given move is legal for the given board state -- @1.1 Scenario Table
+    Given the board state is "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1" ... passed in 0.001s
+    When the uci move given is "e2e4" ... passed in 0.000s
+    Then the move should be evaluated as "legal" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="legal_move_check.As a developer, I want the engine to verify that a move is legal" name="Verify that a given move is legal for the given board state -- @1.2 Scenario Table" status="passed" time="0.001302"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Verify that a given move is legal for the given board state -- @1.2 Scenario Table
+    Given the board state is "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1" ... passed in 0.000s
+    When the uci move given is "e2e5" ... passed in 0.001s
+    Then the move should be evaluated as "illegal" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="legal_move_check.As a developer, I want the engine to verify that a move is legal" name="Verify that a given move is legal for the given board state -- @1.3 Scenario Table" status="passed" time="0.001247"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Verify that a given move is legal for the given board state -- @1.3 Scenario Table
+    Given the board state is "4k3/8/8/8/8/4r3/4K3/8 w - - 0 1" ... passed in 0.000s
+    When the uci move given is "e2e3" ... passed in 0.000s
+    Then the move should be evaluated as "legal" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="legal_move_check.As a developer, I want the engine to verify that a move is legal" name="Verify that a given move is legal for the given board state -- @1.4 Scenario Table" status="passed" time="0.001081"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Verify that a given move is legal for the given board state -- @1.4 Scenario Table
+    Given the board state is "r1bqk1nr/pppp1ppp/2n5/4p3/1b2P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 4" ... passed in 0.000s
+    When the uci move given is "f3e5" ... passed in 0.000s
+    Then the move should be evaluated as "legal" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="legal_move_check.As a developer, I want the engine to verify that a move is legal" name="Verify that a given move is legal for the given board state -- @1.5 Scenario Table" status="passed" time="0.001254"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Verify that a given move is legal for the given board state -- @1.5 Scenario Table
+    Given the board state is "4k3/8/4r3/8/4K3/4P3/8/8 w - - 0 1" ... passed in 0.001s
+    When the uci move given is "e3e4" ... passed in 0.000s
+    Then the move should be evaluated as "illegal" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="legal_move_check.As a developer, I want the engine to verify that a move is legal" name="Verify that a given move is legal for the given board state -- @1.6 Scenario Table" status="passed" time="0.001013"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Verify that a given move is legal for the given board state -- @1.6 Scenario Table
+    Given the board state is "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1" ... passed in 0.000s
+    When the uci move given is "e1g1" ... passed in 0.000s
+    Then the move should be evaluated as "legal" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
