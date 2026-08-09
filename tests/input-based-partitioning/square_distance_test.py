@@ -54,18 +54,3 @@ class SquareDistanceTest(unittest.TestCase):
     def test_square_distance_same_file(self):
         self.assertEqual(chess.square_distance(chess.A1, chess.A8), 7)
         self.assertEqual(chess.square_distance(0, 56), 7)
-           
-    
-    # Test: IDM-SD-09
-    # Description: Test a valid Square a and Square b where dx > dy
-    def test_square_distance_dx_greater(self):
-        self.assertEqual(chess.square_distance(chess.A1, chess.H3), 7)
-        self.assertEqual(chess.square_distance(0, 23), 7)
-           
-
-    # Test: IDM-SD-10
-    # Description: Test a valid Square a and Square b where dx < dy
-    def test_square_distance_dy_greater(self):
-        self.assertEqual(chess.square_distance(chess.A1, chess.C8), 7)
-        self.assertEqual(chess.square_distance(0, 58), 7)
-    

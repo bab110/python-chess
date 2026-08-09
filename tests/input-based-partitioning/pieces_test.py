@@ -82,8 +82,8 @@ class PiecesTest(unittest.TestCase):
     # Test: IDM-PC-14
     # Description: Test a valid piece type with an invalid color.
     def test_piece_pawn_invalid_color(self):
-        with self.assertRaises(NameError):
-            self.board.pieces(chess.PAWN, WHITE)
+        with self.assertRaises(IndexError):
+            self.board.pieces(chess.PAWN, 2)
     
     # Test: IDM-PC-15
     # Description: Test both an invalid piece type and invalid color.
