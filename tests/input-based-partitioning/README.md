@@ -552,7 +552,7 @@ Base Choice Coverage (BCC) was selected to ensure that the pinning logic is veri
 | IDM-PN-07   | Test a valid corner square to verify it cannot be pinned.                  | q1b2, q2b1, q3b1, q4b2, q5b1 | False               | Pass            |
 | IDM-PN-08   | Test a valid edge square that is absolutely pinned.                        | q1b2, q2b1, q3b1, q4b1, q5b2 | True                | Pass            |
 
-<img src="../images/is_pinned.png" alt="Is Pinned Result"/>
+<img src="../images/is_pinned_result.png" alt="Is Pinned Result"/>
 
 #### **5.2.1.10 Set Piece At IDM Test Cases**
 
