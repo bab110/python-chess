@@ -1,0 +1,56 @@
+name: chess-test
+
+on:
+  push: {}
+  pull_request: {}
+
+permissions:
+  contents: read
+
+jobs:
+  input-domain-modeling:
+    name: Input-domain modeling tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+      - name: Install package
+        run: pip install -e .
+      - name: Run input-domain modeling tests
+        run: python -m unittest discover -s tests/input-based-partitioning -p '*_test.py'
+
+  graph-based-tests:
+    name: Graph-based test cases
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+      - name: Install package
+        run: pip install -e .
+      - name: Run graph-based tests
+        run: python -m unittest discover -s tests/graph-based-testing -p '*_test.py'
+
+  acceptance-tests:
+    name: Acceptance test cases
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+      - name: Install package and behave
+        run: |
+          pip install -e .
+          pip install behave
+      - name: Run acceptance tests
+        run: python -m behave tests/acceptance-testing/features
