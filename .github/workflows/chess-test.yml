@@ -21,7 +21,7 @@ jobs:
       - name: Install package
         run: pip install -e .
       - name: Run input-domain modeling tests
-        run: python -m unittest discover -s tests/input-based-partitioning -p '*_test.py'
+        run: python -m unittest discover -s tests/input-based-partitioning -v -p '*_test.py'
 
   graph-based-tests:
     name: Graph-based test cases
@@ -38,7 +38,7 @@ jobs:
           pip install -e .
           pip install pytest
       - name: Run graph-based tests with pytest
-        run: python -m pytest tests/graph-based-testing -q
+        run: python3 -m pytest tests/graph-based-testing -q -v
 
   acceptance-tests:
     name: Acceptance test cases
